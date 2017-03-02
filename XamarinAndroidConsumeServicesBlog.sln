@@ -3,7 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.droid", "DemoApp.droid\DemoApp.droid.csproj", "{A7DFD67D-B8BB-49D7-BC57-9E382F223472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApp.portable", "DemoApp.portable\DemoApp.portable.csproj", "{8109C8BA-E966-4389-907F-2C522BE94C66}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DFD67D-B8BB-49D7-BC57-9E382F223472}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8109C8BA-E966-4389-907F-2C522BE94C66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8109C8BA-E966-4389-907F-2C522BE94C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8109C8BA-E966-4389-907F-2C522BE94C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8109C8BA-E966-4389-907F-2C522BE94C66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

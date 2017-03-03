@@ -2,7 +2,7 @@
 using Android.App;
 using Android.Widget;
 using Android.OS;
-//Nuevo
+//importamos
 using System.Threading.Tasks;
 using DemoApp.portable;
 using System.Linq;
@@ -28,12 +28,13 @@ namespace DemoApp.droid
 
             //Tomamos el id de nuestros layout y hacemos un casting con nuestros objetos respectivamente
 
-            txtID = (EditText)FindViewById(Resource.Id.txtID);
-            listPersonas = (ListView)FindViewById(Resource.Id.listPersonas);
-            btnRegistrar = (Button)FindViewById(Resource.Id.btnRegistrar);
-            btnBuscar = (Button)FindViewById(Resource.Id.btnBuscar);
-            btnEliminar = (Button)FindViewById(Resource.Id.btnEliminar);
+            txtID = FindViewById<EditText>(Resource.Id.txtID);
+            listPersonas = FindViewById<ListView>(Resource.Id.listPersonas);
+            btnRegistrar = FindViewById<Button>(Resource.Id.btnRegistrar);
+            btnBuscar = FindViewById<Button>(Resource.Id.btnBuscar);
+            btnEliminar = FindViewById<Button>(Resource.Id.btnEliminar);
 
+            txtID = FindViewById<EditText>(Resource.Id.txtID);
             // Este eventos se accionará cuando presiones los botones respectivamente
 
             btnRegistrar.Click += delegate { StartActivity(typeof(RegistroActivity)); };

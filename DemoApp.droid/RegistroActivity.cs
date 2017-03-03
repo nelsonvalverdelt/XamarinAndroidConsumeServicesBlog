@@ -1,10 +1,9 @@
 using System;
-
 using Android.App;
 using Android.OS;
 using Android.Widget;
 
-//Nuevo
+//Importamos
 using DemoApp.portable;
 
 namespace DemoApp.droid

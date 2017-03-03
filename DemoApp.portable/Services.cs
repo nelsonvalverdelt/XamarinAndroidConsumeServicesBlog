@@ -36,7 +36,7 @@ namespace DemoApp.portable
         public async Task<Persona> GetPersonasId(int id)
         {
 
-            var getUrl = url + $"/{id}";
+            var getUrl = $"{url}/{id}";
 
             var response = await http.GetAsync(getUrl);
 
@@ -59,7 +59,7 @@ namespace DemoApp.portable
         public async Task<Persona> DeletePersona(int id)
         {
 
-            var deleteUrl = url + $"/{id}";
+            var deleteUrl = $"{url}/{id}";
 
             var response = http.DeleteAsync(deleteUrl);
 

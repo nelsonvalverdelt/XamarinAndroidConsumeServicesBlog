@@ -31,14 +31,14 @@ namespace DemoApp.droid
 
             //Tomamos el id de nuestros layout y hacemos un casting con nuestros objetos respectivamente
 
-            txtNombre = (EditText)FindViewById(Resource.Id.txtNombre);
-            txtApellido = (EditText)FindViewById(Resource.Id.txtApellido);
-            txtEdad = (EditText)FindViewById(Resource.Id.txtEdad);
-            txtEstatura = (EditText)FindViewById(Resource.Id.txtEstatura);
+            txtNombre = FindViewById<EditText>(Resource.Id.txtNombre);
+            txtApellido = FindViewById<EditText>(Resource.Id.txtApellido);
+            txtEdad = FindViewById<EditText>(Resource.Id.txtEdad);
+            txtEstatura = FindViewById<EditText>(Resource.Id.txtEstatura);
 
-            spSexo = (Spinner)FindViewById(Resource.Id.spSexo);
+            spSexo = FindViewById<Spinner>(Resource.Id.spSexo);
 
-            btnRegistrarPersona = (Button)FindViewById(Resource.Id.btnRegistrarPersona);
+            btnRegistrarPersona = FindViewById<Button>(Resource.Id.btnRegistrarPersona);
 
             //Adaptador que contiene un arreglo dato 
             ArrayAdapter<string> adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, dato);
